@@ -28,18 +28,10 @@ MediaPlayer.prototype.unmute = function() {
 };
 
 MediaPlayer.prototype.togglePlay = function() {
-  if (this.media.paused) {
-    this.play();
-  } else {
-    this.pause();
-  }
+  this.media.paused ? this.play(): this.pause();
 };
+
 MediaPlayer.prototype.toggleSound = function(){
-  // if(this.media.muted){
-  //   this.unmute()
-  // }else {
-  //   this.mute()
-  // }
   this.media.muted ? this.unmute() : this.mute();
 };
 
