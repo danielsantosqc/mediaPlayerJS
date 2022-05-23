@@ -23,5 +23,8 @@
   },
   "brouserlist": [
     "last 1 Chrome version"
-  ]
+  ],
+  "dependencies": {
+    "node": "^17.7.2"
+  }
 }
